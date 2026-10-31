@@ -223,6 +223,12 @@
    "full_suite": "1194 tests OK, 1 skip (from 18:46:35 UTC, 1439 s)",
    "mutations": "12, all killed after two added guards",
    "real_record": "command_scans problems 0 over 7 contexts; scan_limits_problems [] on both repositories"
+  },
+  {
+   "criterion": 2,
+   "increment": "2b (review fix: ladder wording and bool card)",
+   "repo": "mob-defaults",
+   "red": "a02f956 (tests/test_trust_ladder.py +153; 56 tests, 7 failing by assertion; real avowry ladder 'ok')"
   }
  ],
  "stand_downs": [
@@ -593,6 +599,14 @@
    "seat": "green-1f",
    "transcript": "subagents/agent-ad809b2e582953450.jsonl",
    "commands": 58,
+   "source": "python delete_guard.py scan-transcript (mob-defaults b8bbfaf), facilitator; read before recording"
+  },
+  {
+   "context": "ctx-4",
+   "status": "clean",
+   "seat": "red-2b",
+   "transcript": "subagents/agent-aaf10d4b30c37e784.jsonl",
+   "commands": 19,
    "source": "python delete_guard.py scan-transcript (mob-defaults b8bbfaf), facilitator; read before recording"
   }
  ],
