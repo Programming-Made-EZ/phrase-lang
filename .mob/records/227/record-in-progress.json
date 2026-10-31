@@ -243,6 +243,12 @@
    "full_suite": "1236 tests OK, 1 skip (from 20:17:52 UTC, 1461 s)",
    "mutations": "5 run, 5 killed (two counts capped, not measured); the per-path dedupe has no test",
    "real": "push_rule_problems [] on avowry and mob-defaults; one caller outside the tests (run_audit)"
+  },
+  {
+   "criterion": 3,
+   "increment": "3d (review fix: facilitator watch default, dedupe, wording)",
+   "repo": "mob-defaults",
+   "red": "9cd8006 (tests/test_push_watch_default.py, 205 lines; 17 tests, 11 failing by assertion; 6 guards shown red); finding: scan_pushes dedupes on the folder name, not the path"
   }
  ],
  "stand_downs": [
@@ -645,6 +651,14 @@
    "seat": "green-3c",
    "transcript": "subagents/agent-a9de6bba632a89445.jsonl",
    "commands": 44,
+   "source": "python delete_guard.py scan-transcript (mob-defaults 799af53), facilitator; read before recording"
+  },
+  {
+   "context": "ctx-4",
+   "status": "clean",
+   "seat": "red-3d",
+   "transcript": "subagents/agent-a4584deb250d23a68.jsonl",
+   "commands": 43,
    "source": "python delete_guard.py scan-transcript (mob-defaults 799af53), facilitator; read before recording"
   }
  ],
