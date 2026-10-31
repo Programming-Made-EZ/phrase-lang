@@ -168,7 +168,10 @@
    "criterion": 1,
    "increment": "1c (review fix: parser)",
    "repo": "mob-defaults",
-   "red": "54c95da (tests/test_command_scan_blocks.py, 277 lines; 130 tests, 60 failing by assertion; 7 guard mutations killed)"
+   "red": "54c95da (tests/test_command_scan_blocks.py, 277 lines; 130 tests, 60 failing by assertion; 7 guard mutations killed)",
+   "green": "c84342a (block, quote, bash -c, cd parsing; length and depth limits pinned by tests/test_command_scan_limits.py)",
+   "full_suite": "956 tests OK, 1 skip (from about 16:13:40 UTC, 1448 s)",
+   "mutations": "13 run, 13 killed"
   }
  ],
  "stand_downs": [
@@ -459,6 +462,13 @@
    "seat": "red-1c",
    "transcript": "subagents/agent-a74322003f48af1d0.jsonl",
    "source": "python delete_guard.py scan-transcript (mob-defaults 8440697), facilitator"
+  },
+  {
+   "context": "ctx-5",
+   "status": "clean",
+   "seat": "green-1c",
+   "transcript": "subagents/agent-a988b0fc89bc1945d.jsonl",
+   "source": "python delete_guard.py scan-transcript (mob-defaults c84342a), facilitator"
   }
  ],
  "reviews": [
