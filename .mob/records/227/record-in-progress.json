@@ -213,6 +213,12 @@
    "green": "191b8fb (every tool call with a command scanned; one reader; size and sha256 per entry; two matching folders refuse)",
    "full_suite": "1171 tests OK, 1 skip (from 17:48:26 UTC, 1439 s)",
    "mutations": "8 run, 8 killed"
+  },
+  {
+   "criterion": 1,
+   "increment": "1f (review fix: record evidence, scan-limits text)",
+   "repo": "mob-defaults",
+   "red": "d4641c1 (tests/test_command_scans_record_strict.py, 205 lines; 21 tests, 16 failing by assertion; 6 guards shown red)"
   }
  ],
  "stand_downs": [
@@ -564,6 +570,14 @@
    "source": "python delete_guard.py scan-transcript (mob-defaults 191b8fb), facilitator",
    "commands": 43,
    "rescan": "re-scanned at close of red 1f with mob-defaults 191b8fb (the 1f record check needs an integer command count)"
+  },
+  {
+   "context": "ctx-4",
+   "status": "clean",
+   "seat": "red-1f",
+   "transcript": "subagents/agent-a980d335ae1fdd0a2.jsonl",
+   "commands": 24,
+   "source": "python delete_guard.py scan-transcript (mob-defaults 191b8fb), facilitator; read before recording"
   }
  ],
  "reviews": [
