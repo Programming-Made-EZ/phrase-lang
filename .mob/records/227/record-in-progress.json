@@ -124,6 +124,11 @@
    "by": "backend developer ctx-5",
    "what": "the green 1d in-flight line's stamp and probe age were computed with Python, not date -u",
    "handling": "recorded"
+  },
+  {
+   "by": "facilitator",
+   "what": "the QA seat for the 1d guards and red 1e was launched about 6 minutes after its in-flight line (17:30:08 UTC), because the facilitator checked the green-1d findings first",
+   "handling": "recorded; the seat was told; cap unchanged"
   }
  ],
  "cycles": [
