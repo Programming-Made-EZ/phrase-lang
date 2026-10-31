@@ -446,6 +446,7 @@ Ledger note (catch-up retro, 2026-10-29): this ledger was not maintained from 20
   computed path, and refuses anything that is not a verified strict child of a known scratch root (empty, relative, outside,
   `..`, symlink, the root itself, an ancestor, home, a drive root); (3) a pre-commit check
   (`scripts/check-unsafe-deletes.py`) refuses a commit that adds such a delete or kill to a script or source file.
+- **The command scan's limits (say them plainly).** `python delete_guard.py scan-transcript` reads the commands a Claude seat executed, at command position in its transcript, after the fact: it is a detector, not a block, and it cannot stop a command that has already run. Agent-tool seats (sub-agents) are scanned by the facilitator by hand until card 228. Encoded forms, hidden-verb forms (a delete behind an unknown or wrapper verb the scan does not know), a delete written into a file and run later, and every non-Claude seat are not covered (card 228 owns them); a symlink or junction inside scratch is not seen; a seat on a non-Claude backend has no command source, so its record entry is `no command source` and the record check fails it.
 - **No `AskUserQuestion`** and no interactive prompts anywhere in the mob.
 - **Do not touch other projects' repos, ports or containers** on a shared machine.
 - Drivers do not add behavior beyond the brief; extra ideas go in the report as "NOT DONE, proposed".
