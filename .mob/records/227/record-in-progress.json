@@ -399,6 +399,10 @@
   {
    "by": "backend developer ctx-5 (green 1f)",
    "observation": "the in-progress record cannot be read by the whole check_record (its cycles is a list); only the command_scans part was checked on it; the closing 227.json is the schema-1 record the full check reads"
+  },
+  {
+   "by": "backend developer ctx-5 (green 3d), facilitator decision",
+   "observation": "green 3d's first full run failed 1 of 1253 (test_card_mode SeatProbes, a 12 s probe limit): the new default makes every seat scan the real mob-defaults and the seat's repository (0.34 s and 0.31 s each), which pushed the test past its limit; the QA reference green missed it because its scratch copy had no .git. Facilitator decision: isolate the test by setting MOB_WATCHED_REPOS in its subprocess env (option 2), not throttle without a red (option 1); second full run with a new in-flight line. The full-run cap 21:57:44 UTC was passed"
   }
  ],
  "follow_up_cards": [
