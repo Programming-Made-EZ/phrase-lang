@@ -238,7 +238,11 @@
    "criterion": 3,
    "increment": "3c (review fix: audit)",
    "repo": "mob-defaults",
-   "red": "89e1b00 (tests/test_push_rule_audit.py, 172 lines; 26 tests, 17 failing by assertion; M9 and A2 shown red); its body says 154 lines and '6 plus 3' guards, all 9 are test_guard_*"
+   "red": "89e1b00 (tests/test_push_rule_audit.py, 172 lines; 26 tests, 17 failing by assertion; M9 and A2 shown red); its body says 154 lines and '6 plus 3' guards, all 9 are test_guard_*",
+   "green": "799af53 (PUSH_RULE_PARTS four parts; run_audit calls push_rule_problems per real path; RuleText sample updated)",
+   "full_suite": "1236 tests OK, 1 skip (from 20:17:52 UTC, 1461 s)",
+   "mutations": "5 run, 5 killed (two counts capped, not measured); the per-path dedupe has no test",
+   "real": "push_rule_problems [] on avowry and mob-defaults; one caller outside the tests (run_audit)"
   }
  ],
  "stand_downs": [
@@ -634,6 +638,14 @@
    "transcript": "subagents/agent-aaf3a7422c2ba9e43.jsonl",
    "commands": 16,
    "source": "python delete_guard.py scan-transcript (mob-defaults 1d65a30), facilitator; read before recording"
+  },
+  {
+   "context": "ctx-5",
+   "status": "clean",
+   "seat": "green-3c",
+   "transcript": "subagents/agent-a9de6bba632a89445.jsonl",
+   "commands": 44,
+   "source": "python delete_guard.py scan-transcript (mob-defaults 799af53), facilitator; read before recording"
   }
  ],
  "reviews": [
