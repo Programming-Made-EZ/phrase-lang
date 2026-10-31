@@ -233,6 +233,12 @@
    "full_suite": "1210 tests OK, 1 skip (from 19:26:58 UTC, 1444 s)",
    "mutations": "7 run, 7 killed",
    "ladder": "avowry: ok"
+  },
+  {
+   "criterion": 3,
+   "increment": "3c (review fix: audit)",
+   "repo": "mob-defaults",
+   "red": "89e1b00 (tests/test_push_rule_audit.py, 172 lines; 26 tests, 17 failing by assertion; M9 and A2 shown red); its body says 154 lines and '6 plus 3' guards, all 9 are test_guard_*"
   }
  ],
  "stand_downs": [
@@ -619,6 +625,14 @@
    "seat": "green-2b",
    "transcript": "subagents/agent-a985d2c035886940f.jsonl",
    "commands": 21,
+   "source": "python delete_guard.py scan-transcript (mob-defaults 1d65a30), facilitator; read before recording"
+  },
+  {
+   "context": "ctx-4",
+   "status": "clean",
+   "seat": "red-3c",
+   "transcript": "subagents/agent-aaf3a7422c2ba9e43.jsonl",
+   "commands": 16,
    "source": "python delete_guard.py scan-transcript (mob-defaults 1d65a30), facilitator; read before recording"
   }
  ],
