@@ -119,6 +119,11 @@
    "by": "facilitator",
    "what": "the facilitator's push helper committed 'MOB.md regenerated (count 3 before a push)' (3c82909) without limiting the commit to MOB.md, so it swept the developer seat's staged trust-ladder entry into that commit; the entry is pushed and correct, but its commit title hides it",
    "handling": "recorded, not rewritten; both helpers now commit only their own path (git commit -- <path>)"
+  },
+  {
+   "by": "backend developer ctx-5",
+   "what": "the green 1d in-flight line's stamp and probe age were computed with Python, not date -u",
+   "handling": "recorded"
   }
  ],
  "cycles": [
@@ -178,7 +183,10 @@
    "increment": "1d (review fix: forms)",
    "repo": "mob-defaults",
    "red": "47c9f67 (tests/test_command_scan_forms2.py, 345 lines; 199 tests, 96 failing by assertion; 11 guard mutations killed)",
-   "note": "its body cites line 184 for the wrapper rows; they are lines 196 to 200 of tests/test_delete_guard.py (correct in the green body)"
+   "note": "its body cites line 184 for the wrapper rows; they are lines 196 to 200 of tests/test_delete_guard.py (correct in the green body)",
+   "green": "d047643 (substitution, heredocs owned by a shell or interpreter, rmtree anywhere in Python text, wrappers and unknown verbs within their first 12 words)",
+   "full_suite": "1155 tests OK, 1 skip (17:01:26 to about 17:25 UTC, 1446 s)",
+   "mutations": "24 run, 22 killed; 2 survived (the script-argument stdin rule; $(...) read inside an unquoted data heredoc), guards to come before red 1e"
   }
  ],
  "stand_downs": [
@@ -483,6 +491,13 @@
    "seat": "red-1d",
    "transcript": "subagents/agent-a500fd1bc1f83f811.jsonl",
    "source": "python delete_guard.py scan-transcript (mob-defaults c84342a), facilitator"
+  },
+  {
+   "context": "ctx-5",
+   "status": "findings",
+   "seat": "green-1d",
+   "transcript": "subagents/agent-a444fce83f71aff44.jsonl",
+   "source": "python delete_guard.py scan-transcript (mob-defaults d047643), facilitator"
   }
  ],
  "reviews": [
