@@ -228,7 +228,11 @@
    "criterion": 2,
    "increment": "2b (review fix: ladder wording and bool card)",
    "repo": "mob-defaults",
-   "red": "a02f956 (tests/test_trust_ladder.py +153; 56 tests, 7 failing by assertion; real avowry ladder 'ok')"
+   "red": "a02f956 (tests/test_trust_ladder.py +153; 56 tests, 7 failing by assertion; real avowry ladder 'ok')",
+   "green": "1d65a30 (SAFETY_RULE pattern for delete-ban wordings; bool card never a number)",
+   "full_suite": "1210 tests OK, 1 skip (from 19:26:58 UTC, 1444 s)",
+   "mutations": "7 run, 7 killed",
+   "ladder": "avowry: ok"
   }
  ],
  "stand_downs": [
@@ -608,6 +612,14 @@
    "transcript": "subagents/agent-aaf10d4b30c37e784.jsonl",
    "commands": 19,
    "source": "python delete_guard.py scan-transcript (mob-defaults b8bbfaf), facilitator; read before recording"
+  },
+  {
+   "context": "ctx-5",
+   "status": "clean",
+   "seat": "green-2b",
+   "transcript": "subagents/agent-a985d2c035886940f.jsonl",
+   "commands": 21,
+   "source": "python delete_guard.py scan-transcript (mob-defaults 1d65a30), facilitator; read before recording"
   }
  ],
  "reviews": [
