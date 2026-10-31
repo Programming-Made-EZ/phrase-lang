@@ -198,7 +198,10 @@
    "criterion": 1,
    "increment": "1e (review fix: source)",
    "repo": "mob-defaults",
-   "red": "ce20e89 (tests/test_command_source_tools.py, 176 lines; 12 tests, 11 failing by assertion; B3 and B9 guards shown red)"
+   "red": "ce20e89 (tests/test_command_source_tools.py, 176 lines; 12 tests, 11 failing by assertion; B3 and B9 guards shown red)",
+   "green": "191b8fb (every tool call with a command scanned; one reader; size and sha256 per entry; two matching folders refuse)",
+   "full_suite": "1171 tests OK, 1 skip (from 17:48:26 UTC, 1439 s)",
+   "mutations": "8 run, 8 killed"
   }
  ],
  "stand_downs": [
@@ -522,6 +525,13 @@
    "seat": "red-1e (and guard 1d)",
    "transcript": "subagents/agent-a3a336629a6a208ad.jsonl",
    "source": "python delete_guard.py scan-transcript (mob-defaults d047643), facilitator"
+  },
+  {
+   "context": "ctx-5",
+   "status": "clean",
+   "seat": "green-1e",
+   "transcript": "subagents/agent-a4a98426a55bdd2ac.jsonl",
+   "source": "python delete_guard.py scan-transcript (mob-defaults 191b8fb), facilitator"
   }
  ],
  "reviews": [
