@@ -191,7 +191,14 @@
    "note": "its body cites line 184 for the wrapper rows; they are lines 196 to 200 of tests/test_delete_guard.py (correct in the green body)",
    "green": "d047643 (substitution, heredocs owned by a shell or interpreter, rmtree anywhere in Python text, wrappers and unknown verbs within their first 12 words)",
    "full_suite": "1155 tests OK, 1 skip (17:01:26 to about 17:25 UTC, 1446 s)",
-   "mutations": "24 run, 22 killed; 2 survived (the script-argument stdin rule; $(...) read inside an unquoted data heredoc), guards to come before red 1e"
+   "mutations": "24 run, 22 killed; 2 survived (the script-argument stdin rule; $(...) read inside an unquoted data heredoc), guards to come before red 1e",
+   "guard": "d5ccc7f (pins the script-argument rule and $() in an unquoted data heredoc; both survivors now red under their mutations)"
+  },
+  {
+   "criterion": 1,
+   "increment": "1e (review fix: source)",
+   "repo": "mob-defaults",
+   "red": "ce20e89 (tests/test_command_source_tools.py, 176 lines; 12 tests, 11 failing by assertion; B3 and B9 guards shown red)"
   }
  ],
  "stand_downs": [
@@ -508,6 +515,13 @@
    "transcript": "subagents/agent-a444fce83f71aff44.jsonl",
    "source": "python delete_guard.py scan-transcript (mob-defaults d047643), facilitator",
    "reason": "3 findings, all false positives: the seat's mutation-run scripts (python heredocs) carry 'rmtree' inside string literals (test and mutation names), and green 1d's rule 'rmtree anywhere in Python text' flags them; no delete was run. A false positive introduced by d047643 itself; owned by card 228's false-positive line, and raised for the re-review"
+  },
+  {
+   "context": "ctx-4",
+   "status": "clean",
+   "seat": "red-1e (and guard 1d)",
+   "transcript": "subagents/agent-a3a336629a6a208ad.jsonl",
+   "source": "python delete_guard.py scan-transcript (mob-defaults d047643), facilitator"
   }
  ],
  "reviews": [
