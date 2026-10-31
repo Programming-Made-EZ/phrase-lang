@@ -172,6 +172,13 @@
    "green": "c84342a (block, quote, bash -c, cd parsing; length and depth limits pinned by tests/test_command_scan_limits.py)",
    "full_suite": "956 tests OK, 1 skip (from about 16:13:40 UTC, 1448 s)",
    "mutations": "13 run, 13 killed"
+  },
+  {
+   "criterion": 1,
+   "increment": "1d (review fix: forms)",
+   "repo": "mob-defaults",
+   "red": "47c9f67 (tests/test_command_scan_forms2.py, 345 lines; 199 tests, 96 failing by assertion; 11 guard mutations killed)",
+   "note": "its body cites line 184 for the wrapper rows; they are lines 196 to 200 of tests/test_delete_guard.py (correct in the green body)"
   }
  ],
  "stand_downs": [
@@ -468,6 +475,13 @@
    "status": "clean",
    "seat": "green-1c",
    "transcript": "subagents/agent-a988b0fc89bc1945d.jsonl",
+   "source": "python delete_guard.py scan-transcript (mob-defaults c84342a), facilitator"
+  },
+  {
+   "context": "ctx-4",
+   "status": "clean",
+   "seat": "red-1d",
+   "transcript": "subagents/agent-a500fd1bc1f83f811.jsonl",
    "source": "python delete_guard.py scan-transcript (mob-defaults c84342a), facilitator"
   }
  ],
