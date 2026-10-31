@@ -218,7 +218,11 @@
    "criterion": 1,
    "increment": "1f (review fix: record evidence, scan-limits text)",
    "repo": "mob-defaults",
-   "red": "d4641c1 (tests/test_command_scans_record_strict.py, 205 lines; 21 tests, 16 failing by assertion; 6 guards shown red)"
+   "red": "d4641c1 (tests/test_command_scans_record_strict.py, 205 lines; 21 tests, 16 failing by assertion; 6 guards shown red)",
+   "green": "mob-defaults b8bbfaf (record check asks for evidence; scan_limits_problems called by run_audit; template and own agreement text); avowry c803a43 (scan-limits sentence)",
+   "full_suite": "1194 tests OK, 1 skip (from 18:46:35 UTC, 1439 s)",
+   "mutations": "12, all killed after two added guards",
+   "real_record": "command_scans problems 0 over 7 contexts; scan_limits_problems [] on both repositories"
   }
  ],
  "stand_downs": [
@@ -365,6 +369,10 @@
   {
    "by": "facilitator",
    "observation": "false positives on real seat transcripts after greens 1c to 1e: 6 transcripts (stand-down 1, green 1d, review-ctx6, security-review, red 1d, and the strings in red 1c), all from test-data or mutation strings in Python text or heredocs; one real finding (red 1c). The counter-metric is now worse than the reviews' baseline, and every false positive costs a manual read"
+  },
+  {
+   "by": "backend developer ctx-5 (green 1f)",
+   "observation": "the in-progress record cannot be read by the whole check_record (its cycles is a list); only the command_scans part was checked on it; the closing 227.json is the schema-1 record the full check reads"
   }
  ],
  "follow_up_cards": [
@@ -578,6 +586,14 @@
    "transcript": "subagents/agent-a980d335ae1fdd0a2.jsonl",
    "commands": 24,
    "source": "python delete_guard.py scan-transcript (mob-defaults 191b8fb), facilitator; read before recording"
+  },
+  {
+   "context": "ctx-5",
+   "status": "clean",
+   "seat": "green-1f",
+   "transcript": "subagents/agent-ad809b2e582953450.jsonl",
+   "commands": 58,
+   "source": "python delete_guard.py scan-transcript (mob-defaults b8bbfaf), facilitator; read before recording"
   }
  ],
  "reviews": [
